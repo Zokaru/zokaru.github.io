@@ -25,7 +25,7 @@
     <div class="generalCont">
       <!-- Header -->
       <header class="mainHeader">
-        <div class="headerTitleCont">
+        <div class="headerTitleCont hidden" id="headerTitleCont">
           <a href="#" class="logoLink">
             <img src="assets/images/logo/dsLogo_grey.svg" alt="Daniel Sánchez" class="headerLogo">
             <span class="headerTitle">Daniel Sánchez</span>
@@ -124,8 +124,10 @@
           <section class="cont_full" id="works">
             <div class="sectionCont">
               <div class="sectionStart">
-                <h2 class="sectionTitle">Works</h2>
-                <p class="sectionSubtitle">What I've done</p>
+                <div class="sectionSticky">
+                  <h2 class="sectionTitle">Works</h2>
+                  <p class="sectionSubtitle">What I've done</p>
+                </div>
               </div>
               <div class="sectionEnd">
 
@@ -146,7 +148,9 @@
                 <div class="sectionEnd">
                   <section class="serviceCard">
                     <h3 class="serviceCard__title">User Experience Design (UX)</h3>
-                    <p class="serviceCard__text">aaaa</p>
+                    <p class="serviceCard__text">I always take a holistic approach to UX and product design: I act not only as a designer, but also as a business analyst, a researcher and marketer.</p>
+                    <p class="serviceCard__text">Furthermore, I place accessibility in a special place: I have a passion for the intricacies involved in designing (and developing) accessible products. Accessibility is not a buzzword, nor a plus: it is the very essence of a successful product.</p>
+                    <p class="serviceCard__text">Seeing how the final product can have an actual impact, both by improving (even a tiny bit) the user’s daily life, or by teaching clients about the value of UX, is what makes all the hard work worthwhile.</p>
                   </section>
                   <section class="serviceCard">
                     <h3 class="serviceCard__title">Web Design & Development</h3>
@@ -167,8 +171,8 @@
                   </section>
                   <section class="serviceCard">
                     <h3 class="serviceCard__title">Video Editing & Motion Graphics</h3>
-                    <p class="serviceCard__text">aaaa</p>
-                    <p class="serviceCard__text">aaaa</p>
+                    <p class="serviceCard__text">The need for an eye-catching ad, a captivating introduction for a website, or a memorable business presentation makes video an essential asset.</p>
+                    <p class="serviceCard__text">I use video and animation as part of my toolkit, as an enhancer of any design piece. Ultimately, the goal is to make your vision come to life, and what better way to do that?</p>
                   </section>
                 </div>
             </div>
@@ -198,8 +202,8 @@
                     years of experience
                   </li>
                   <li class="aboutStats__item">
-                    <span class="aboutStats__item__value">9+</span>
-                    years of experience
+                    <span class="aboutStats__item__value">50+</span>
+                    projects completed
                   </li>
                   <li class="aboutStats__item">
                     <span class="aboutStats__item__value">9+</span>
@@ -207,19 +211,48 @@
                   </li>
                 </ul>
                 <section class="aboutCvSection">
-                  <h3 class="">Experience</h3>
-                  <ol class="aboutCvList">
-                    <li class="">
-                      <span class="">Freelance Designer</span>
+                  <h3 class="aboutCvSection__title">Experience</h3>
+                  <ol class="unstyledList aboutCvList">
+                    <li class="aboutCvList__item">
+                      <span class="aboutCvList__item__title">Freelance Designer</span>
                       <span>2026-present</span>
                     </li>
+                    <li class="aboutCvList__item">
+                      <span>Senior UX/UI Designer</span>
+                      <span class="aboutCvList__item__title">Switch Software Solutions</span>
+                      <span>2018-2026</span>
+                    </li>
+                    <li class="aboutCvList__item">
+                      <span>Web Designer/Developer</span>
+                      <span class="aboutCvList__item__title">Mi Agencia de comunicación</span>
+                      <span>2017-2018</span>
+                    </li>
                   </ol>
+                </section>
+                <section class="aboutCvSection">
+                  <h3 class="aboutCvSection__title">Education</h3>
+                  <ol class="unstyledList aboutCvList">
+                    <li class="aboutCvList__item">
+                      <span>Universidad ORT Uruguay</span>
+                      <span class="aboutCvList__item__title">Bachelor in Multimedia Design</span>
+                      <span>2015-2019</span>
+                    </li>
+                    <li class="aboutCvList__item">
+                      <span>Universidad de la República</span>
+                      <span class="aboutCvList__item__title">Computer Engineering (unfinished)</span>
+                      <span>2014</span>
+                    </li>
+                  </ol>
+                </section>
+                <section class="aboutCvSection">
+                  <h3 class="aboutCvSection__title">Bio</h3>
+                  <p></p>
                 </section>
               </div>
             </div>
             <div>
-              <a href="assets/files/DanielSanchezCV.pdf" target="_blank" class="link">
-                <img src="" alt="" class="">
+              <a href="assets/files/DanielSanchezCV.pdf" target="_blank" class="button button_link">
+                <img src="assets/images/icons/file.svg" alt="" class="icon">
                 View my resume
               </a>
             </div>
@@ -232,9 +265,16 @@
                 <h2 class="sectionTitle">Contact</h2>
                 <p class="sectionSubtitle">Let's work together</p>
               </div>
-              <div class="sectionEnd">
-
-              </div>
+              <address class="sectionEnd">
+                <a href="mailto:contact@daniels.uy" target="_blank" class="button button_link">
+                  <img src="assets/images/icons/email.svg" alt="" class="icon">
+                  contact@daniels.uy
+                </a>
+                <a href="https://linkedin.com/in/danielsdesign" target="_blank" class="button button_link">
+                  <img src="assets/images/icons/linkedin.svg" alt="" class="icon">
+                  danielsdesign
+                </a>
+              </address>
             </div>
           </section>
         </main>

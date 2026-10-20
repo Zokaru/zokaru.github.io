@@ -32,3 +32,13 @@ document.addEventListener("DOMContentLoaded", function() {
   headerOverlay.addEventListener("click", function() { closeMenus() });
   btnMain.addEventListener("click", function() { toggleMenu(btnMain, menuMain) });
 });
+
+/* Hide header title */
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (currentScrollPos > 600) {
+    document.getElementById("headerTitleCont").classList.remove("hidden");
+  } else {
+    document.getElementById("headerTitleCont").classList.add("hidden");
+  }
+} 
