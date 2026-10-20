@@ -26,14 +26,14 @@ document.addEventListener("DOMContentLoaded", function() {
   headerOverlay = document.getElementById('headerOverlay');
   menuMain = document.getElementById('mainMenu');
 
-  btnMain = document.getElementById('btnMainMenu');
+  btnMain = document.getElementById('mainMenuToggleBtn');
 
   menuMain.addEventListener("click", function() { closeMenus() });
   headerOverlay.addEventListener("click", function() { closeMenus() });
   btnMain.addEventListener("click", function() { toggleMenu(btnMain, menuMain) });
 });
 
-/* Hide header title */
+// Hide header title on scroll
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (currentScrollPos > 600) {
@@ -42,3 +42,26 @@ window.onscroll = function() {
     document.getElementById("headerTitleCont").classList.add("hidden");
   }
 } 
+
+
+// Blur start image on scroll
+document.addEventListener('DOMContentLoaded', () => {
+  const feature = document.querySelector('.feature');
+  if (!feature) return;
+
+  const zoom = parseFloat(getComputedStyle(feature).backgroundSize) / 100;
+  const size = zoom * feature.getBoundingClientRect().width;
+
+  window.addEventListener('scroll', () => {
+    const fromTop = window.scrollY;
+    const newSize = size - fromTop / 3;
+    const featureWidth = feature.getBoundingClientRect().width;
+
+    if (newSize > featureWidth) {
+      feature.style.backgroundSize = `${newSize}px`;
+      feature.style.filter = `blur(${fromTop / 100}px)`;
+      feature.style.opacity =
+        1 - (fromTop / document.documentElement.scrollHeight) * 1.3;
+    }
+  });
+});
