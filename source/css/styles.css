@@ -1,62 +1,4 @@
 
-/* //////////////////// Variables //////////////////// */
-
-:root {
-  --main: #2b2b2b;
-  --main-dark: #000000;
-  --main-light: #464646;
-  --main-shadow: rgba(43, 43, 43, .25);
-  --secondary: #f2f2f2;
-  --secondary-dark: #f2f2f2;
-  --secondary-light: #f2f2f2;
-  --secondary-shadow: rgba(242, 242, 242, .25);
-  --success-regular: #46B74E;
-  --success-dark: #0B6411;
-  --success-light: #67E570;
-  --success-lighter: #cbffcf;
-  --warning-regular: #E28B00;
-  --warning-dark: #714600;
-  --warning-light: #FFBC50;
-  --info-regular: #2360EB;
-  --info-dark: #0A3BAC;
-  --info-light: #6594FF;
-  --text-strong: #f2f2f2;
-  --text-light: #7F7F7F;
-  --grey: #AFAFAF;
-  --outline: #E1E1E1;
-  --bkg: #F8F8F8;
-}
-
-/* //////////////////// Fonts //////////////////// */
-
-/* ///// Chakra Petch ///// */
-
-@font-face {
-    font-family: 'Chakra Petch';
-    src: url('../fonts/ChakraPetch-Regular.woff2') format('woff2'),
-        url('../fonts/ChakraPetch-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Chakra Petch';
-    src: url('../fonts/ChakraPetch-SemiBold.woff2') format('woff2'),
-        url('../fonts/ChakraPetch-SemiBold.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Chakra Petch';
-    src: url('../fonts/ChakraPetch-Bold.woff2') format('woff2'),
-        url('../fonts/ChakraPetch-Bold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
 
 /* //////////////////// Atomic //////////////////// */
 
@@ -241,6 +183,7 @@ body {
 .generalCont {
   display: flex;
   min-height: 100vh;
+  background-color: var(--main-dark);
 }
 
 .container_marginTop {
@@ -339,6 +282,8 @@ p {
 
 .button {
   display: inline-flex;
+  align-items: center;
+  gap: 2rem;
   padding: 0.625rem 1rem 0.5rem 1rem;
   border: 1px solid var(--main);
   border-radius: 0;
@@ -371,8 +316,6 @@ p {
 /* ////////// Link ////////// */
 
 .button.button_link {
-  display: inline-flex;
-  gap: 2rem;
   padding: 0.625rem 1rem 0.5rem 1rem;
   border: 1px solid transparent;
   font-size: 4rem;
@@ -723,6 +666,9 @@ p {
   width: 100%;
   margin-top: 4rem;
 }
+.underConstruction.mainCont {
+  margin-top: 0;
+}
 
 @media screen and (max-width: 991px) {
   .mainCont {
@@ -738,7 +684,6 @@ p {
   justify-content: space-between;
   min-height: calc(100vh - 4rem);
   color: var(--text-strong);
-  background-color: #111;
 }
 .startCont::before {    
   content: "";
@@ -843,11 +788,14 @@ p {
   margin: 0;
   font-size: 2rem;
 }
+.underConstruction .startSubtitle {
+  padding-top: 0;
+}
 
 @media screen and (max-width: 991px) {
   .startTitle {
     margin: 1.5rem 0 1rem 0;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   .startSubtitle {
     font-size: 1.75rem;
@@ -1116,3 +1064,62 @@ p {
 @media only screen and (min-width:36.250em) {
   .content {width:60%; padding-top:35% }
 }
+
+
+
+
+.ucLinks {
+  margin: 0 1rem;
+}
+
+.underConstruction .button.button_link {
+  font-size: 2rem;
+  gap: 1.5rem;
+}
+.underConstruction .button.button_link .icon {
+  width: 2.5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .underConstruction .startContent {
+    padding-bottom: 4rem;
+  }
+
+  .underConstruction .startLogo {
+    height: 6rem;
+  }
+
+  .underConstruction .startTitle {
+    margin: 0;
+    font-size: 3.5rem;
+  }
+  .underConstruction .startSubtitle {
+    font-size: 1.25rem;
+  }
+  .underConstruction .button.button_link {
+    font-size: 1.25rem;
+  }
+}
+
+
+
+
+
+
+
+.dots-x{
+  background-image:linear-gradient(to right, var(--dash-color,var(--grid)) 50%, transparent 0);
+  background-repeat:repeat-x;
+  background-size:6px 1px;
+  height:1px
+}
+
+.dots-y {
+  background-image: linear-gradient(to bottom, var(--dash-color,var(--grid)) 50%, transparent 0);
+  background-repeat: repeat-y;
+  background-size: 1px 6px;
+  width: 1px;
+}
+
+
+

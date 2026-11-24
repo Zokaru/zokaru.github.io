@@ -1,0 +1,36 @@
+<!-- Header -->
+<header class="mainHeader">
+  <div class="headerTitleCont hidden" id="headerTitleCont">
+    <a href="{{ page: '' }}" class="logoLink">
+      <img src="{{ asset: 'images/logo/dsLogo_grey.svg' }}" alt="Daniel Sánchez" class="headerLogo">
+      <span class="headerTitle">{{ t: 'daniel_sanchez' }}</span>
+    </a>
+  </div>
+  <nav class="mainHeaderNav">
+    <div class="headerBottomCont dropend">
+      <label for="mainMenuToggleBtn" class="unstyledButton headerBtn mainMenuToggleBtn" aria-controls="mainMenu">
+        <span class="srOnly">Toggle main menu</span>
+        <svg class="headerBtn__icon" xmlns="http://www.w3.org/2000/svg" width="120" height="85.01" viewBox="0 0 120 85.01"><path d="M0,85.009v-7H120v7Zm0-39v-7H120v7ZM0,7V0H120V7Z"/></svg>
+      </label>
+      <input type="checkbox" id="mainMenuToggleBtn" class="srOnly mainMenuToggleCheck">
+      <div class="mainMenu" id="mainMenu">
+        <ul class="unstyledList mainMenuList">
+          <li>
+            <a href="{{ page: '#works' }}" class="navLink">Works</a>
+          </li>
+          <li>
+            <a href="{{ page: '#services' }}" class="navLink">Services</a>
+          </li>
+          <li>
+            <a href="{{ page: '#about' }}" class="navLink">About</a>
+          </li>
+          <li>
+            <a href="{{ page: '#contact' }}" class="navLink">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="headerOverlay" class="headerOverlay"></div>
+<!-- End Header -->

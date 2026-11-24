@@ -1,0 +1,109 @@
+{
+    "title": "Daniel Sánchez - UX Designer",
+    "description": "I'm a Senior UX/UI Designer based in Uruguay, with over 9 years of experience in software and web design for fintech, retail, logistics, and more. ",
+    "daniel_sanchez": "Daniel Sánchez",
+    "nav": {
+        "works": "Works",
+        "services": "Services",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "home": {
+        "start": {
+            "marquee": {
+                "1": ""
+            },
+            "subtitle_1": "I'm a ",
+            "subtitle_2": "Senior UX/UI Designer ",
+            "subtitle_3": "based in Uruguay, with ",
+            "subtitle_4": "over 9 years ",
+            "subtitle_5": "of experience in software and web design for fintech, retail, logistics, and more."
+        },
+        "title": "Works",
+        "subtitle": "What I've done"
+    },
+    "works": {
+        "title": "Works",
+        "subtitle": "What I've done",
+        "back_to": "Go back to works",
+        "context": "Context",
+        "research": "Research",
+        "development": "Development",
+        "results": "Results",
+        "tldr": {
+            "title": "tl;dr",
+            "what_is_about": "What is this about?",
+            "what_i_do": "What did I do?",
+            "why_relevant": "Why is this relevant?"
+        },
+        "disclaimer": {
+            "title": "Disclaimer",
+            "switch": "Este proyecto fue realizado como parte de mi trabajo en Switch Software Solutions.",
+            "privacy": "Con el fin de respetar la privacidad de los clientes y otras partes involucradas, varios nombres, logotipos, y elementos visuales identificativos han sido quitados o modificados."
+        },
+        "benten": {
+            "title": "Benten Biotech",
+            "subtitle": "Website, branding and content marketing for a biotechnology firm."
+        },
+        "gearing": {
+            "title": "Gearing",
+            "subtitle": "Highly customizable Business Process Automation (ERP) system",
+            "context": {
+                "p1": "Gearing",
+                "p2": "Gearing",
+                "stat_1_title": "Gearing",
+                "stat_1_text": "Gearing",
+                "img1": "Gearing"
+            },
+            "research": {
+                "p1": "Gearing",
+                "p2": "Gearing",
+                "p3": "Gearing",
+                "p4": "Gearing",
+                "p5": "Gearing",
+                "img1": "Gearing"
+            },
+            "development": {
+                "p1": "Gearing",
+                "p2": "Gearing",
+                "p3": "Gearing",
+                "t1": "Gearing",
+                "img1": "Gearing",
+                "p4": "Gearing",
+                "p5": "Gearing",
+                "p6": "Gearing",
+                "p7": "Gearing",
+                "img2": "Gearing",
+                "t2": "Gearing",
+                "p8": "Gearing",
+                "p9": "Gearing",
+                "p10": "Gearing",
+                "p11": "Gearing",
+                "img3": "Gearing",
+                "t3": "Gearing",
+                "p12": "Gearing",
+                "l1_1": "Gearing",
+                "l1_2": "Gearing",
+                "l1_3": "Gearing",
+                "l1_4": "Gearing",
+                "img4": "Gearing",
+                "img5": "Gearing"
+            }
+        }
+    },
+    "services": {
+        "title": "Services",
+        "subtitle": "How can I help you"
+    },
+    "about": {
+        "title": "About",
+        "subtitle": "Who I am"
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": "Let's work together"
+    },
+    "footer": {
+        "copyright": "© Daniel Sánchez - All rights reserved."
+    }
+}

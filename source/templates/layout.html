@@ -1,0 +1,35 @@
+<html lang="{{ lang }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+
+    <!-- Meta -->
+    <meta name="description" content="{{ t: 'description' }}">
+    <meta name="keywords" content="design, ux, ux design, product design, web design, graphic design, branding">
+    <meta name="author" content="Daniel Sánchez">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:image" content=""> <!-- TODO -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset: 'favicon/apple-touch-icon.png' }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset: 'favicon/favicon-32x32.png' }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset: 'favicon/favicon-16x16.png' }}">
+    <link rel="manifest" href="{{ asset: 'favicon/site.webmanifest' }}">
+    <link rel="mask-icon" href="{{ asset: 'favicon/safari-pinned-tab.svg' }}" color="#ec1f39">
+    <meta name="msapplication-TileColor" content="#ec1f39">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS -->
+    <esta-css />
+  </head>
+
+  <body>
+    <div class="generalCont">
+      <esta-content />
+    </div>
+
+    <!-- JS -->
+    <esta-js />
+  </body>
+</html>
