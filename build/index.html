@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Daniel Sánchez - UX Designer</title>
+    </head>
+    <body>
+        <p>Choose a language:</p>
+        <ul>
+            <li><a href="https://danielsanchez.xyz/en/index.html">English</a></li>
+            <li><a href="/es/index.html">Español</a></li>
+        </ul>
+
+        <script>
+            const supported = ["en"];
+            const defaultLanguage = "en";
+
+            const preferred = navigator.languages
+                .map(tag => tag.toLowerCase().split("-")[0])
+                .find(lang => supported.includes(lang));
+
+            const language = preferred || defaultLanguage;
+            if (window.location.protocol !== "file:") window.location.replace(`/${language}/index.html`);
+            else window.location.replace(`./${language}/index.html`);
+        </script>
+    </body>
+</html>

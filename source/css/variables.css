@@ -1,0 +1,27 @@
+/* //////////////////// Variables //////////////////// */
+
+:root {
+  --main: #2b2b2b;
+  --main-dark: #000000;
+  --main-light: #464646;
+  --main-shadow: rgba(43, 43, 43, .25);
+  --secondary: #f2f2f2;
+  --secondary-dark: #f2f2f2;
+  --secondary-light: #f2f2f2;
+  --secondary-shadow: rgba(242, 242, 242, .25);
+  --success-regular: #46B74E;
+  --success-dark: #0B6411;
+  --success-light: #67E570;
+  --success-lighter: #cbffcf;
+  --warning-regular: #E28B00;
+  --warning-dark: #714600;
+  --warning-light: #FFBC50;
+  --info-regular: #2360EB;
+  --info-dark: #0A3BAC;
+  --info-light: #6594FF;
+  --text-strong: #f2f2f2;
+  --text-light: #7F7F7F;
+  --grey: #AFAFAF;
+  --outline: #E1E1E1;
+  --bkg: #F8F8F8;
+}

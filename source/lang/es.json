@@ -1,0 +1,44 @@
+{
+    "title": "Daniel Sánchez - UX Designer",
+    "description": "I'm a Senior UX/UI Designer based in Uruguay, with over 9 years of experience in software and web design for fintech, retail, logistics, and more. ",
+    "daniel_sanchez": "Daniel Sánchez",
+    "nav": {
+        "works": "Works",
+        "services": "Services",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "home": {
+        "start": {
+            "marquee": {
+                "1": ""
+            },
+            "subtitle_1": "I'm a ",
+            "subtitle_2": "Senior UX/UI Designer ",
+            "subtitle_3": "based in Uruguay, with ",
+            "subtitle_4": "over 9 years ",
+            "subtitle_5": "of experience in software and web design for fintech, retail, logistics, and more."
+        },
+        "title": "Works",
+        "subtitle": "What I've done"
+    },
+    "works": {
+        "title": "Works",
+        "subtitle": "What I've done"
+    },
+    "services": {
+        "title": "Services",
+        "subtitle": "Works"
+    },
+    "about": {
+        "title": "About",
+        "subtitle": "Who I am"
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": "Let's work together"
+    },
+    "footer": {
+        "copyright": "© Daniel Sánchez - Todos los derechos reservados."
+    }
+}
